@@ -2,43 +2,25 @@
 
 <html lang="en-us">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Phelan McCall's Contact Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script>
-        function myFunction() {
-          var headerLinks = document.getElementById("mobile-header-links");
-          var mobileMenu = document.getElementById("mobile-menu");
-
-          if (headerLinks.style.display === "none") {
-            headerLinks.style.display = "flex";
-            mobileMenu.style.backgroundColor = "lightgray"
-          } else {
-            headerLinks.style.display = "none";
-            mobileMenu.style.backgroundColor = "gray";
-            
-            
-
-          }
-        }
-        </script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>Phelan McCall's Portfolio</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.1.css">
+        <link rel="stylesheet" href="./assets/css/style.2.css">
+      
+        
+    </head>
+    
 <body>
     <nav id="navbar">
         <header class="row" id='header'>
             <div id="logo"><strong>Phelan McCall</strong></div>
-            
-        <div id="mobile-menu" href="javascript:void(0);" onclick="myFunction()">|||</div>
-        <div id="mobile-header-links">
-            <a href="index.html"  >About</a>
-            <a href="portfolio.html" class="middle-nav-link">Projects</a>
-            <a href="contact.html" >Contact</a>
-         </div>
+        
             <div id="header-links">
                 <a href="index.html"  >About</a>
-                <a href="portfolio.html" class="middle-nav-link">Projects</a>
+                <a href="portfolio.html" id="middle-nav-link">Portfolio</a>
                 <a href="contact.html" >Contact</a>
              </div>
             
