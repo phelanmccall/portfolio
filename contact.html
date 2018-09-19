@@ -6,19 +6,41 @@
     <meta charset="UTF-8">
     <title>Phelan McCall's Contact Page</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <script>
+        function myFunction() {
+          var headerLinks = document.getElementById("mobile-header-links");
+          var mobileMenu = document.getElementById("mobile-menu");
+
+          if (headerLinks.style.display === "none") {
+            headerLinks.style.display = "flex";
+            mobileMenu.style.backgroundColor = "lightgray"
+          } else {
+            headerLinks.style.display = "none";
+            mobileMenu.style.backgroundColor = "gray";
+            
+            
+
+          }
+        }
+        </script>
 </head>
 
 <body>
     <nav id="navbar">
         <header class="row" id='header'>
-            <strong id="logo" class="col-xs-6 col-lg-4">Phelan McCall</strong>
+            <div id="logo"><strong>Phelan McCall</strong></div>
             
+        <div id="mobile-menu" href="javascript:void(0);" onclick="myFunction()">|||</div>
+        <div id="mobile-header-links">
+            <a href="index.html"  >About</a>
+            <a href="portfolio.html" class="middle-nav-link">Projects</a>
+            <a href="contact.html" >Contact</a>
+         </div>
             <div id="header-links">
-                    <a href="index.html"  class="col-xs-3 col-lg-4">About</a>
-                    <a href="portfolio.html" class="middle-nav-link col-xs-3 col-lg-4">Projects</a>
-                    <a href="contact.html"  class="col-xs-3 col-lg-4">Contact</a>
-                 </div>
+                <a href="index.html"  >About</a>
+                <a href="portfolio.html" class="middle-nav-link">Projects</a>
+                <a href="contact.html" >Contact</a>
+             </div>
             
         </header>
     </nav>
@@ -44,10 +66,10 @@
             </form>
     </div>
 
-    <footer class="row">
-        <a class="col-xs-4 col-lg-4" href="https://www.linkedin.com/in/phelan-mccall/">LinkedIn</a>
-        <a class="col-xs-4 col-lg-4" href="https://www.github.com/mougatrah/">Github</a>
-        <a class="col-xs-4 col-lg-4" href="https://www.codepen.io/mougatrah">Codepen</a>
+    <footer class="row" >
+        <a href="https://www.linkedin.com/in/phelan-mccall/">LinkedIn</a>
+        <a href="https://www.github.com/mougatrah/">Github</a>
+        <a href="https://www.codepen.io/mougatrah">Codepen</a>
     </footer>
 </body>
 
