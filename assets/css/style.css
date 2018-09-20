@@ -128,7 +128,7 @@ img {
   color: black;
   background: #fff;
   width: 60vw;
-  margin: 5vh 20vw 25vh;
+  margin: 8vh 20vw;
   padding: 2%;
   flex: 1 0 auto;
 }
@@ -149,6 +149,10 @@ img {
   flex-direction: column;
   text-align: left;
   color: gray;
+}
+
+#message{
+  height: 20vh;
 }
 
 #submit {
