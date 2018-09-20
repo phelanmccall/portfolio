@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   height: 100%;
-  background-image: url("./asset");
+  background-image: url("../images/gravel.png");
 }
 
 * {
