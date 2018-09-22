@@ -20,12 +20,12 @@ h2{
   font-size: 24px;
 }
 nav {
-  display: block;
-  position: relative;
+  display: flex;
+  position: fixed;
  z-index: 1001;
   border-bottom: solid #ccc;
   height: 10vh;
-  width: 100#;
+  width: 100%;
 
   background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -55,7 +55,7 @@ p {
 
 footer {
   display: flex;
-  position:sticky;
+  position: fixed;
   bottom:0;
   width: 100%;
   height: 8vh;
@@ -136,7 +136,10 @@ img {
   background: #fff;
   height: auto;
   width: 960px;
+  
   margin: 0 auto;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
   padding: 2%;
   border: solid #ddd;
   flex: 1 0 auto;
