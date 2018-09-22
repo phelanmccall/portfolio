@@ -111,10 +111,13 @@ img {
   float: left;
   text-align: center;
   padding-top: 2vh;
+  padding-left: 30vw;
+  border-right: solid #ccc;
   border-bottom: solid #ccc;
   display: table;
   height: 8vh;
-  width: 100%;
+  width:auto;
+  
   background-color: white;
   
 }
@@ -131,8 +134,8 @@ img {
   text-align: left;
   color: black;
   background: #fff;
-  width: 100%;
-  margin: 20vh 0vw 15vh 0vw;
+  width: 60vw;
+  margin: 20vh 20vw 15vh 20vw;
   padding: 2%;
   border: solid #ddd;
   flex: 1 0 auto;
@@ -209,13 +212,11 @@ img {
 
 @media only screen and (min-width: 913px){
   #header-links{
-    width:auto;
-    padding-left: 30vw;
+   
     border: none;
   }
 
   #section{
-    margin-left: 20vw;
-    width: 60vw;
+    
   }
 }
