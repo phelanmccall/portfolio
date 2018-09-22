@@ -20,12 +20,12 @@ h2{
   font-size: 24px;
 }
 nav {
-  display: flex;
-  position: fixed;
-  z-index: 1100;
+  display: block;
+  position: relative;
+ z-index: 1001;
   border-bottom: solid #ccc;
   height: 10vh;
-  width: 100%;
+  width: 100#;
 
   background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -55,7 +55,7 @@ p {
 
 footer {
   display: flex;
-  position:fixed;
+  position:sticky;
   bottom:0;
   width: 100%;
   height: 8vh;
