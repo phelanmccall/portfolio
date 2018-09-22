@@ -2,6 +2,7 @@ html,
 body {
   display: flex;
   flex-direction: column;
+  color: #777777;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   height: 100%;
@@ -19,12 +20,13 @@ h2{
   font-size: 24px;
 }
 nav {
-  position: flex;
+  position: fixed; 
+  top:0;
  z-index: 1001;
   border-bottom: solid #ccc;
   height: 10vh;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   
 }
@@ -58,7 +60,9 @@ footer {
   height: 8vh;
   justify-content: center;
   border-top: solid thick #4aaaa5;
-  background-color: grey;
+  background-color: #666;
+  overflow: hidden;
+
 }
 
 footer p{
@@ -107,10 +111,10 @@ img {
   float: left;
   text-align: center;
   padding-top: 2vh;
-  padding-left: 30vw;
+  border-bottom: solid #ccc;
   display: table;
   height: 8vh;
-  width: auto;
+  width: 100%;
   background-color: white;
   
 }
@@ -127,16 +131,17 @@ img {
   text-align: left;
   color: black;
   background: #fff;
-  width: 60vw;
-  margin: 8vh 20vw;
+  width: 100%;
+  margin: 20vh 0vw 15vh 0vw;
   padding: 2%;
+  border: solid #ddd;
   flex: 1 0 auto;
 }
 
 #section header h2 {
   text-align: left;
   color: #4aaaa5;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   border-bottom: solid lightgray;
 }
 
@@ -152,7 +157,7 @@ img {
 }
 
 #message{
-  height: 20vh;
+  height: 10vh;
 }
 
 #submit {
@@ -200,4 +205,17 @@ img {
 .portfolio_images img{
   height: auto;
   width: 100%;
+}
+
+@media only screen and (min-width: 913px){
+  #header-links{
+    width:auto;
+    padding-left: 30vw;
+    border: none;
+  }
+
+  #section{
+    margin-left: 20vw;
+    width: 60vw;
+  }
 }
