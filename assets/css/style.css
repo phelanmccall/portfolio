@@ -20,12 +20,13 @@ h2{
   font-size: 24px;
 }
 nav {
-  position: fixed; 
-  top:0;
+  display: block;
+  position: relative;
  z-index: 1001;
   border-bottom: solid #ccc;
   height: 10vh;
-  width: 100%;
+  width: 100#;
+
   background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   
@@ -54,7 +55,7 @@ p {
 
 footer {
   display: flex;
-  position:fixed;
+  position:sticky;
   bottom:0;
   width: 100%;
   height: 8vh;
@@ -99,8 +100,8 @@ img {
   color: white;
   float: left;
   height: 5vh;
-  width: auto;
-  margin-left: 20vw;
+ 
+ 
   padding: 2vh 2vw 3vh 2vw;
   font-size: 20px;
   background-color: #4aaaa5;
@@ -108,10 +109,10 @@ img {
 }
 
 #header-links {
-  float: left;
+  float: right;
   text-align: center;
   padding-top: 2vh;
-  padding-left: 30vw;
+
   border-bottom: solid #ccc;
   display: inline;
   height: 8vh;
@@ -133,8 +134,9 @@ img {
   text-align: left;
   color: black;
   background: #fff;
-  width: 60vw;
-  margin: 20vh 20vw 15vh 20vw;
+  height: auto;
+  width: 960px;
+  margin: 0 auto;
   padding: 2%;
   border: solid #ddd;
   flex: 1 0 auto;
@@ -173,7 +175,10 @@ img {
 }
 
 
-
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
 
 .label {
   margin-top: 1%;
