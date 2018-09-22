@@ -112,16 +112,15 @@ img {
   text-align: center;
   padding-top: 2vh;
   padding-left: 30vw;
-  border-right: solid #ccc;
   border-bottom: solid #ccc;
-  display: table;
+  display: inline;
   height: 8vh;
   width:auto;
   
   background-color: white;
   
 }
-#header-links a{
+#header-links a{  
   padding: 0vh 2vw;
 }
 
@@ -208,15 +207,4 @@ img {
 .portfolio_images img{
   height: auto;
   width: 100%;
-}
-
-@media only screen and (min-width: 913px){
-  #header-links{
-   
-    border: none;
-  }
-
-  #section{
-    
-  }
 }
