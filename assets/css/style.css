@@ -20,12 +20,12 @@ h2{
   font-size: 24px;
 }
 nav {
-  display: block;
-  position: relative;
- z-index: 1001;
+  display: flex;
+  position: fixed;
+  z-index: 1100;
   border-bottom: solid #ccc;
   height: 10vh;
-  width: 100#;
+  width: 100%;
 
   background-color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
