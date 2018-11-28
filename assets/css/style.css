@@ -1,5 +1,6 @@
+
 body{
- 
+
 background-color:  rgba(1, 1, 1, 0.5)
 }
 nav{
@@ -9,13 +10,12 @@ nav{
 
 section {
   min-height:100vh;
+
 }
 
 #about-area{
   background-image: url("../images/abckeyboard.jpg");
   background-size: 100%;
-
-
   clip-path: polygon(0 0, 100% 20%, 100% 93%, 50% 100%, 0% 93%, 1% 20%);
   
 }
