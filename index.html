@@ -260,6 +260,8 @@
         var home = document.getElementById("homeBtn");
         var port = document.getElementById("portBtn");
         var cont = document.getElementById("contBtn");
+        var portfolio = document.getElementById("portfolio-area");
+        var contact = document.getElementById("contact-area")
 
         window.onscroll = function (e) {
             if (window.scrollY <= 170) {
@@ -285,17 +287,15 @@
         })
 
         port.addEventListener("click", function () {
-            window.scrollTo({
-                top: 1323,
-                left: 0,
+            portfolio.scrollIntoView({
+                block: "start",
                 behavior: "smooth"
             });
         })
 
         cont.addEventListener("click", function () {
-             window.scrollTo({
-                top: 3286,
-                left: 0,
+            contact.scrollIntoView({
+                block: "start",
                 behavior: "smooth"
             });
         })
