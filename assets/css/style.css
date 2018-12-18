@@ -42,13 +42,16 @@ section {
 
 
 .portfolio-item{
- 
-  background: black;
-  border: 5px solid black;
   margin: 0 auto;
   margin-bottom: 2vh;
 }
 
+.portfolio-item .img-fluid{
+  margin: 0 25% 0 25%;
+  width: 50%;
+  border-radius: 69%;
+  box-shadow: 5px 10px 20px #444; 
+}
 
 
 #portfolio-area{
