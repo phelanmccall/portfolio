@@ -49,14 +49,15 @@ section {
 .portfolio-item .img-fluid{
   margin: 0 25% 0 25%;
   width: 50%;
-  border-radius: 69%;
-  box-shadow: 5px 10px 20px #444; 
+  border-radius: 20%;
+  box-shadow: 0 10px 10px 2px #444; 
 }
 
 
 #portfolio-area{
   padding-top: 5vh;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 0 10px 10px 20px #444;
 
 }
 
