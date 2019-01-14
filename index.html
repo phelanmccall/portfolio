@@ -66,7 +66,7 @@
 
     <section id="info-area" class="info container-fluid pb-5">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div id="info-left" class="col-12 col-lg-6">
                 <p class="col-12 text-center">
                     In preparation for UC Berkeley's coding bootcamp I
                     went through <a href="https://www.freecodecamp.org/phaylin">freecodecamp</a>'s curriculum.
@@ -79,7 +79,7 @@
                     <img src="assets/images/javascript-cert.png" class="img-fluid col-5" />
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-center">
+            <div id="info-right" class="col-12 col-lg-6 text-center">
                 <p>
                     <image src="assets/images/react_drum_machine.png" class="img-fluid col-10" />
                 </p>
@@ -264,19 +264,26 @@
         var port = document.getElementById("portBtn");
         var cont = document.getElementById("contBtn");
         var portfolio = document.getElementById("portfolio-area");
-        var contact = document.getElementById("contact-area")
+        var contact = document.getElementById("contact-area");
+        var info_left = document.getElementById("info-left");
+        var info_right = document.getElementById("info-right");
 
         window.onscroll = function (e) {
             if (window.scrollY <= 170) {
+
                 if (nav.style.opacity != "1") {
                     nav.style.opacity = "1";
                 }
-            } else {
-                if (nav.style.opacity != "0.5") {
-                    nav.style.opacity = "0.5";
 
-                }
-            }
+                info_left.style.marginLeft = -100;
+                info_right.style.marginRight = -100;
+
+            } else if (nav.style.opacity != "0.5") {
+                nav.style.opacity = "0.5";
+            }else if(window.scrollY >= 170){
+                info_left.style.marginLeft = 100;
+                info_right.style.marginRight = 100;}
+                
         }
 
         home.addEventListener("click", function () {

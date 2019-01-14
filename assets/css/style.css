@@ -21,8 +21,20 @@ section {
   background-image: url("../images/abckeyboard.jpg");
   background-size: 100%;
   clip-path: polygon(0 0, 100% 20%, 100% 93%, 50% 100%, 0% 93%, 1% 20%);
+
   
 }
+
+#info-right{
+  margin-left: -100vw;
+  transition: margin-left 2s;
+
+}
+#info-left{
+  margin-right: -100vw;
+  transition: margin-right 2s;
+}
+
 
 @media only screen and (min-width: 768px){
 
