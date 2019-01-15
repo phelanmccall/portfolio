@@ -25,16 +25,12 @@ section {
   
 }
 
-#info-right{
-  margin-left: -100vw;
-  transition: margin-left 2s;
-
+#info-area{
+ 
+  position: relative;
+  right: -1000px;
+  transition: right 2s;
 }
-#info-left{
-  margin-right: -100vw;
-  transition: margin-right 2s;
-}
-
 
 @media only screen and (min-width: 768px){
 
