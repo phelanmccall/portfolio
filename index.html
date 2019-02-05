@@ -31,6 +31,9 @@
                     <a class="nav-link" id="homeBtn">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" id="infoBtn">Skills</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" id="portBtn">Portfolio</a>
                 </li>
                 <li class="nav-item">
@@ -47,16 +50,13 @@
 
             <div class="info row justify-content-center">
 
-                <div class="col-12 col-lg-10 ">
+                <div class="col-12 col-lg-10">
 
-                    <h1 class="col-12 col-lg-12 border-bottom">About Me:</h1>
+                    <h1 class="col-12 col-lg-10">About Me:</h1>
 
-                    <p class="col-12 col-lg-10">
-                        My name is Phelan and I am going to school for web development. My intent is to turn my
-                        interest in
-                        programming into a profession.
+                    <p class="col-10 col-lg-8 text-center">
+                        My name is Phelan and I am a full-stack web developer.
                     </p>
-
 
                 </div>
             </div>
@@ -66,27 +66,23 @@
 
     <div style="overflow: hidden;">
         <section id="info-area" class="info container-fluid pb-5">
+            <br>
             <div class="row">
-                <div id="info-left" class="col-12 col-lg-6">
-                    <p class="col-12 text-center">
-                        In preparation for UC Berkeley's coding bootcamp I
-                        went through <a href="https://www.freecodecamp.org/phaylin">freecodecamp</a>'s curriculum.
-                        I have completed 655 of 1408 coding challenges, built 8 out of 30 projects, and earned 2 out of
-                        6 certifications.
-
-                    </p>
-                    <div class="text-center">
-                        <img src="assets/images/responsive-cert.png" class="img-fluid col-5" />
-                        <img src="assets/images/javascript-cert.png" class="img-fluid col-5" />
-                    </div>
+                <div class="col-10 pt-5">
+                <h2>Skills:</h2>
+                <table class="table table-hover table-striped">
+                    <thead class="thead-dark">
+                        <tr><th>Front-end</th><th>Back-end</th><th>Misc</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>HTML5/CSS3</td><td>Node.js</td><td>jQuery</td></tr>
+                        <tr><td>Bootstrap</td><td>mySQL</td><td>github</td></tr>
+                        <tr><td>React.js</td><td>express.js</td><td>heroku</td></tr>
+                        <tr><td>handlebars.js</td><td>passport.js</td><td>JSON</td></tr>
+                        <tr><td>Mobile-first</td><td>npm</td><td>Mocha</td></tr>
+                    </tbody>
+                </table>
                 </div>
-                <div id="info-right" class="col-12 col-lg-6 text-center">
-                    <p>
-                        <image src="assets/images/react_drum_machine.png" class="img-fluid col-10" />
-                    </p>
-
-                </div>
-
             </div>
         </section>
     </div>
@@ -297,6 +293,7 @@
     (function () {
         var nav = document.getElementById("nav");
         var home = document.getElementById("homeBtn");
+        var skill = document.getElementById("infoBtn");
         var port = document.getElementById("portBtn");
         var cont = document.getElementById("contBtn");
         var about = document.getElementById("about-area");
@@ -313,27 +310,27 @@
             if (window.scrollY <= about.scrollHeight) {
                 console.log("TOP");
                 console.log(info.style.right)
-                if (nav.style.opacity != "1") {
+                if (nav.style.opacity !== "1") {
                     nav.style.opacity = "1";
                 }
-                if (info.style.right == "0px") {
-                    info.style.right = "-1000px";
+                if (info.style.right === "-8vw") {
+                    info.style.right = "100vw";
                 }
 
             }
             if (window.scrollY >= about.scrollHeight/2 && window.scrollY <= info.scrollHeight) {
                 console.log("MIDDLE");
                 console.log(info.style.right)
-                if (info.style.right != "0px") {
-                    info.style.right = "0px";
+                if (info.style.right !== "-8vw") {
+                    info.style.right = "-8vw";
                 }
             }
 
             if (window.scrollY > info.scrollHeight) {
                 console.log("LOWER");
                 console.log(info.style.right)
-                if (info.style.right == "0px") {
-                    info.style.right = "-1000px";
+                if (info.style.right === "-8vw") {
+                    info.style.right = "-100vw";
                 }
             }
         }
@@ -346,6 +343,13 @@
                 behavior: "smooth"
             })
 
+        })
+
+        skill.addEventListener("click", function () {
+            info.scrollIntoView({
+                block: "start",
+                behavior: "smooth"
+            })
         })
 
         port.addEventListener("click", function () {

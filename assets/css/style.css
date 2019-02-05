@@ -19,7 +19,9 @@ section {
 
 #about-area{
   background-image: url("../images/abckeyboard.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
   clip-path: polygon(0 0, 100% 20%, 100% 93%, 50% 100%, 0% 93%, 1% 20%);
 
   
@@ -28,7 +30,7 @@ section {
 #info-area{
  
   position: relative;
-  right: -1000px;
+  right: 100vw;
   transition: right 2s;
 }
 
