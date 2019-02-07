@@ -11,6 +11,9 @@ nav{
   opacity: 1;
   transition: opacity 2s;
 }
+.nav-link{
+  cursor: pointer;
+}
 
 section {
   min-height:100vh;
@@ -21,6 +24,7 @@ section {
   background-image: url("../images/abckeyboard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 auto;
   clip-path: polygon(0 0, 100% 20%, 100% 93%, 50% 100%, 0% 93%, 1% 20%);
 
@@ -28,12 +32,14 @@ section {
 }
 
 #info-area{
- 
+  text-shadow: 2px 2px 2px #999;
   position: relative;
   right: 100vw;
   transition: right 2s;
 }
-
+ #info-area .row div{
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+ }
 @media only screen and (min-width: 768px){
 
   #about-area,  #info-area, #contact-area{
