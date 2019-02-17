@@ -397,13 +397,16 @@
                 if (nav.style.opacity !== "1") {
                     nav.style.opacity = "1";
                 }
-                if (info.style.right === "0vw") {
+                if (info.style.right == "0vw") {
                     info.style.right = "100vw";
                 }
 
             }
+
             if (window.scrollY >= about.scrollHeight / 2 && window.scrollY <= info.scrollHeight *2) {
-                          
+                if (nav.style.opacity !== "0.5") {
+                    nav.style.opacity = "0.5";
+                }
                 if (info.style.right !== "0vw") {
                     info.style.right = "0vw";
                 }
