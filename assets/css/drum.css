@@ -17,7 +17,6 @@
     box-shadow:-1px 1px 5px;;
   }
   
-  
  
   #drum-machine {
     text-align: center;
@@ -27,6 +26,9 @@
     background-color:silver;
     border: solid black 5px;
   
+  }
+  #drum-machine .btn {
+      width:100%;
   }
   
   #display {
@@ -38,4 +40,5 @@
     border: solid black;
     border-radius: 50px;
   }
+  
   

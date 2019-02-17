@@ -389,16 +389,11 @@
         var portfolio = document.getElementById("portfolio-area");
         var contact = document.getElementById("contact-area");
         var info = document.getElementById("info-area");
-        console.log(" about = " + about.scrollHeight);
-        console.log(" info = " + info.scrollHeight);
-        console.log(" portfolio = " + portfolio.scrollHeight)
 
         window.onscroll = function (e) {
-            console.log(window.scrollY);
 
             if (window.scrollY <= about.scrollHeight) {
-                console.log("TOP");
-                console.log(info.style.right)
+                       
                 if (nav.style.opacity !== "1") {
                     nav.style.opacity = "1";
                 }
@@ -407,17 +402,15 @@
                 }
 
             }
-            if (window.scrollY >= about.scrollHeight / 2 && window.scrollY <= info.scrollHeight) {
-                console.log("MIDDLE");
-                console.log(info.style.right)
+            if (window.scrollY >= about.scrollHeight / 2 && window.scrollY <= info.scrollHeight *2) {
+                          
                 if (info.style.right !== "0vw") {
                     info.style.right = "0vw";
                 }
             }
 
-            if (window.scrollY > info.scrollHeight) {
-                console.log("LOWER");
-                console.log(info.style.right)
+            if (window.scrollY > info.scrollHeight *2) {
+                         
                 if (info.style.right === "0vw") {
                     info.style.right = "-100vw";
                 }
