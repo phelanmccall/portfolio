@@ -67,6 +67,7 @@ section {
   margin-bottom: 2vh;
 }
 .portfolio-item .img-fluid:hover{
+  cursor: pointer;
   border-radius: 10%;
   transition: border-radius 1s;
 }
