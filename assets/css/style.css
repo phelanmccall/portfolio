@@ -66,6 +66,7 @@ section {
   margin-bottom: 2vh;
 }
 .portfolio-item .img-fluid:hover{
+  cursor: pointer;
   border-radius: 10%;
   transition: border-radius 1s;
 }
@@ -126,6 +127,23 @@ section {
 }
 
 
+.App .col-12 .btn{
+  margin: 0 auto;
+  width: 25%;
+  height: 10vh;
+  cursor: pointer;
+ 
+}
 
+#memory-game {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width:100%;
+  background-color:silver;
+  border: solid black 5px;
+  border-radius: 50px;
+
+}
 
 

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/drum.css">
 
 
 </head>
@@ -109,54 +110,24 @@
 
             </div>
 
-            <!-- <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Front-end</th>
-                                <th>Back-end</th>
-                                <th>Misc</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HTML5/CSS3</td>
-                                <td>Node.js</td>
-                                <td>jQuery</td>
-                            </tr>
-                            <tr>
-                                <td>Bootstrap</td>
-                                <td>mySQL</td>
-                                <td>github</td>
-                            </tr>
-                            <tr>
-                                <td>React.js</td>
-                                <td>express.js</td>
-                                <td>heroku</td>
-                            </tr>
-                            <tr>
-                                <td>handlebars.js</td>
-                                <td>passport.js</td>
-                                <td>JSON</td>
-                            </tr>
-                            <tr>
-                                <td>Mobile-first</td>
-                                <td>npm</td>
-                                <td>Mocha</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
                     <h1 class="col-12 text-center m-auto pt-5">
                             Room for improvement
                         </h1>
+                       
                 </section>
         
     </div>
-
+   
     <section id="portfolio-area" class="container text-light pb-5">
 
         <h1 class="border-bottom mb-5">Portfolio:</h1>
-
+       
+    
         <div class="row justify-content-center">
+
+            <div id="react-demo" class="container-fluid">
+                  
+            </div>
 
             <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
                 <a href="https://phelan-newsroom.herokuapp.com/" target="_blank"><img class="img-fluid"
@@ -200,6 +171,31 @@
                 </h5>
             </div>
 
+            <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
+                    <a href="https://mougatrah.github.io/lyrdeo/" target="_blank"><img class="img-fluid"
+                            src="./assets/images/lyrdeo.png"></a>
+                    <h5 class="p-3 text-center" style="left:5.5%; right: 5%;">
+                        <p class="item-title">Lyrdeo (Group Project)<br>
+                            <small>A video/lyrics app utilizing multiple APIs. <a class="btn btn-dark text-light"
+                                    href="https://github.com/mougatrah/lyrdeo" target="_blank">
+                                    <i class="fab fa-github"></i></a></small>
+                        </p>
+    
+                    </h5>
+                </div>
+    
+                <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
+                    <a href="https://mougatrah.github.io/RPS/" target="_blank"><img class="img-fluid"
+                            src="./assets/images/rps.png"></a>
+                    <h5 class="p-3 text-center" style="left:5.5%; right: 5%;">
+                        <p class="item-title">Rock/Paper/Scissors Game<br>
+                            <small>A multiplayer game utilizing jQuery and Firebase. <a class="btn btn-dark text-light"
+                                    href="https://github.com/mougatrah/RPS" target="_blank">
+                                    <i class="fab fa-github"></i></a></small>
+                        </p>
+    
+                    </h5>
+                </div>
 
             <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
                 <img class="img-fluid" src="./assets/images/bamazon.png">
@@ -242,31 +238,6 @@
             </div>
 
 
-            <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
-                <a href="https://mougatrah.github.io/lyrdeo/" target="_blank"><img class="img-fluid"
-                        src="./assets/images/lyrdeo.png"></a>
-                <h5 class="p-3 text-center" style="left:5.5%; right: 5%;">
-                    <p class="item-title">Lyrdeo (Group Project)<br>
-                        <small>A video/lyrics app utilizing multiple APIs. <a class="btn btn-dark text-light"
-                                href="https://github.com/mougatrah/lyrdeo" target="_blank">
-                                <i class="fab fa-github"></i></a></small>
-                    </p>
-
-                </h5>
-            </div>
-
-            <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
-                <a href="https://mougatrah.github.io/RPS/" target="_blank"><img class="img-fluid"
-                        src="./assets/images/rps.png"></a>
-                <h5 class="p-3 text-center" style="left:5.5%; right: 5%;">
-                    <p class="item-title">Rock/Paper/Scissors Game<br>
-                        <small>A multiplayer game utilizing jQuery and Firebase. <a class="btn btn-dark text-light"
-                                href="https://github.com/mougatrah/RPS" target="_blank">
-                                <i class="fab fa-github"></i></a></small>
-                    </p>
-
-                </h5>
-            </div>
 
             <div class="portfolio-item col-sm-12 col-md-5 col-xl-4 m-auto">
                 <a href="https://mougatrah.github.io/TrainSchedule/" target="_blank"><img class="img-fluid"
@@ -386,6 +357,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+ <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+  <!-- Load our React component. -->
+  <script type="text/babel" src="./assets/js/myReact.js"></script>
+
 </body>
 <script>
     (function () {
@@ -398,35 +379,31 @@
         var portfolio = document.getElementById("portfolio-area");
         var contact = document.getElementById("contact-area");
         var info = document.getElementById("info-area");
-        console.log(" about = " + about.scrollHeight);
-        console.log(" info = " + info.scrollHeight);
-        console.log(" portfolio = " + portfolio.scrollHeight)
 
         window.onscroll = function (e) {
-            console.log(window.scrollY);
 
             if (window.scrollY <= about.scrollHeight) {
-                console.log("TOP");
-                console.log(info.style.right)
+                       
                 if (nav.style.opacity !== "1") {
                     nav.style.opacity = "1";
                 }
-                if (info.style.right === "0vw") {
+                if (info.style.right == "0vw") {
                     info.style.right = "100vw";
                 }
 
             }
-            if (window.scrollY >= about.scrollHeight / 2 && window.scrollY <= info.scrollHeight) {
-                console.log("MIDDLE");
-                console.log(info.style.right)
+
+            if (window.scrollY >= about.scrollHeight / 2 && window.scrollY <= info.scrollHeight *2) {
+                if (nav.style.opacity !== "0.5") {
+                    nav.style.opacity = "0.5";
+                }
                 if (info.style.right !== "0vw") {
                     info.style.right = "0vw";
                 }
             }
 
-            if (window.scrollY > info.scrollHeight) {
-                console.log("LOWER");
-                console.log(info.style.right)
+            if (window.scrollY > info.scrollHeight *2) {
+                         
                 if (info.style.right === "0vw") {
                     info.style.right = "-100vw";
                 }

@@ -1,0 +1,46 @@
+.drum-pad {
+    text-align: center;
+    color: black;
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-right:solid silver;
+    border-bottom:solid black;
+    border-radius: 40px 40px 10px 40px;
+    box-shadow: -2px 2px 10px;
+    
+    
+  }
+  .drum-pad:active{
+  
+    box-shadow:-1px 1px 5px;;
+  }
+  
+ 
+  #drum-machine {
+    text-align: center;
+    margin: 0 auto;
+    padding: auto;
+    width:250px;
+    background-color:silver;
+    border: solid black 5px;
+    border-radius: 50px;
+
+  
+  }
+  #drum-machine .btn {
+      width:100%;
+  }
+  
+  #display {
+    padding: 5px;
+    font-family:monospace;
+    color:whitesmoke;
+    height: 50px;
+    background-color: royalblue;
+    border: solid black;
+    border-radius: 50px;
+  }
+  
+  
