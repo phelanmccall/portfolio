@@ -35,6 +35,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" id="homeBtn">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <li>
+                    <a class="nav-link" href="./assets/images/phelanmccallresume.pdf" target="_blank">Resume</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" id="infoBtn">Skills</a>
                 </li>
@@ -55,16 +58,18 @@
 
             <div class="info row justify-content-center">
 
-                <div class="col-12">
+                <div class="col-sm-10 col-lg-8">
 
                     <h1 class="col-10">About Me:</h1>
+                    <img src="https://avatars1.githubusercontent.com/u/12578723?s=460&v=4" class="col-6 img-fluid float-left">
+                    <p>
+                      
+                        My name is Phelan and I am a Full Stack Web Developer with MERN experience, who is flexible, adaptable, collaborative, and dependable, with 5 years
+of independent learning culminating in certifications from freecodecamp and UC Berkeley Extension Coding bootcamp.
 
-                    <p class="text-center ">
-                        My name is Phelan and I am a full-stack web developer.
-                    </p>
-                    <div class="btn btn-dark m-auto">
-                        <a class="text-light" href="./assets/images/phelanmccallresume.pdf" target="_blank">Resume</a>
-                    </div>
+
+
+                    
                 </div>
             </div>
         </div>
@@ -79,33 +84,34 @@
             </div>
             <div class="text-center row p-3">
                 <div class="col-sm-12 col-md-4">
-                    <h3 class="border-bottom border-dark">Front-end:</h3>
+                    <h3 class="border-bottom border-dark">Industry Knowledge:</h3>
                     <ul>
-                        <li>HTML5/CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>React.js</li>
-                        <li>handlebars.js</li>
-                        <li>Mobile-first</li>
+                        <li>Full-stack Development</li>
+                        <li>User Experience (UX)</li>
+                        <li>Web Applications</li>
+                        <li>Testing</li>
+                        <li>Agile Methodologies</li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <h3 class="border-bottom border-dark">Back-end:</h3>
+                    <h3 class="border-bottom border-dark">Tools & Technologies:</h3>
                     <ul>
-                        <li>Node.js</li>
-                        <li>mySQL</li>
-                        <li>express.js</li>
-                        <li>passport.js</li>
-                        <li>npm</li>
+                        <li>Databases(SQL/NoSQL)</li>
+                        <li>jQuery/cheerio</li>
+                        <li>React/handlebars</li>
+                        <li>HTML/CSS/Javascript</li>
+                        <li>python/Django</li>   
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <h3 class="border-bottom border-dark">Misc:</h3>
+                    <h3 class="border-bottom border-dark">Other Skills:</h3>
                     <ul>
-                        <li>jQuery</li>
-                        <li>github</li>
-                        <li>heroku</li>
-                        <li>JSON</li>
-                        <li>Mocha</li>
+                        
+                        <li>Github</li>
+                        <li>Heroku</li>
+                        <li>Java/Android</li>
+                        <li>C#/Unity3d</li>
+                    
                     </ul>
                 </div>
 
@@ -350,6 +356,7 @@
             <div class="col-12">
                 <a href="mailto:phelanmccall@yahoo.com">phelanmccall@yahoo.com</a>
             </div>
+            
         </div>
 
 
@@ -750,7 +757,8 @@ class App extends React.Component {
 
 }
 
-ReactDOM.render(<App />, document.getElementById("react-demo"))</script>
+ReactDOM.render(<App />, document.getElementById("react-demo"))
+</script>
 
 <script>
     (function () {
