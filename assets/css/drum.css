@@ -25,6 +25,8 @@
     width:250px;
     background-color:silver;
     border: solid black 5px;
+    border-radius: 50px;
+
   
   }
   #drum-machine .btn {
