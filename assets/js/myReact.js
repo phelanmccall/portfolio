@@ -272,8 +272,8 @@ class MemoryGame extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    console.log("U2FsdGVkX1/GoY76pT589vwdqcRvG1IvwxHO9KVX2rI=".length)
-    if (!this.state.matched.includes(e.target.id) && e.target.id.length < 32)
+    console.log(e.target.id)
+    if (!this.state.matched.includes(e.target.id))
       if (this.state.pick1 === null) {
         this.setState({ pick1: e.target.id });
       } else if (this.state.pick2 === null && this.state.pick1 !== e.target.id) {
