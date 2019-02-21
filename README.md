@@ -1,7 +1,7 @@
 
 ## Phelan's portfolio
 
-https://mougatrah.github.io/portfolio/  
+https://phelanmccall.github.io/portfolio/  
 
 This is my _professional portfolio_ for my **_job search_**!
 
