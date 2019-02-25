@@ -44,7 +44,6 @@ section {
   #about-area,  #info-area, #contact-area{
     font-size: 1.5rem;
   }
- 
   }
 
 @media only screen and (min-width: 992px){
@@ -110,7 +109,7 @@ section {
 
 .cover .row{
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 13vh;
 }
 
 .info p a{
