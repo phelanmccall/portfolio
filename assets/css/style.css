@@ -68,8 +68,8 @@ section {
 .portfolio-item img{
   margin: 0 25% 0 25%;
   min-width: 50%;
-  min-height: 100%;
   width: 50%;
+  height: auto;
   border-radius: 20%;
   transition: border-radius 2s;
   
@@ -185,6 +185,7 @@ section {
     margin: 1vh 1vw;
     border-radius: 30px;
     box-shadow: 10px 10px 12px black;
+    max-width: 37vw;
   }
   
 .item-info{
