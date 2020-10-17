@@ -1,207 +1,194 @@
-
-body{
+body {
   font-size: 1.5rem;
-background-color:  rgba(1, 1, 1, 0.5);
-
-
+  background-color: rgba(1, 1, 1, 0.5);
 }
 
-nav{  
+nav {
   font-size: 1rem;
   opacity: 1;
   transition: opacity 2s;
 }
-.nav-link{
+.nav-link {
   cursor: pointer;
 }
 
 section {
-  min-height:100vh;
+  min-height: 100vh;
 }
 
-#about-area{
+#about-area {
   background-image: url("../images/abckeyboard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
-  clip-path: polygon(0 0, 100% 20%, 100% 93%, 50% 100%, 0% 93%, 1% 20%);
-  
 }
 
-#info-area{
+#info-area {
   text-shadow: 2px 2px 2px #999;
   position: relative;
   right: 100vw;
   padding-top: 5vh;
   transition: right 2s;
 }
- #info-area .row div{
-  box-shadow: 0 0 10px rgba(0,0,0,0.9);
- }
+#info-area .row div {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
 
-.item-info{
+.item-info {
   padding: 1rem;
   left: 5.5%;
   right: 5%;
 }
 
-#info-area p{
-  margin-top:25vh;
-  
+#info-area p {
+  margin-top: 25vh;
 }
 
-
-.portfolio-item{
+.portfolio-item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 20%;
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 0 auto;
   margin-bottom: 2vh;
   text-align: center;
-
-
 }
-.portfolio-item img:hover{
+.portfolio-item img:hover {
   cursor: pointer;
   border-radius: 10%;
   transition: border-radius 1s;
 }
 
-.portfolio-item img{
-  margin: 0 25% 0 25%;
+.portfolio-item img {
   min-width: 50%;
-  width: 50%;
+  width: 400px;
+  max-width: 90vw;
   height: auto;
   border-radius: 20%;
   transition: border-radius 2s;
-  
 }
 
-
-#portfolio-area{
+#portfolio-area {
   padding-top: 5vh;
   border-radius: 2%;
-  background-color: rgba(0, 0, 0, 0.473);
-  background-image: linear-gradient(0deg,#555 25%,#666 74%);
+  background-image: linear-gradient(0deg, #555 25%, #666 74%);
   box-shadow: 0 10px 10px 20px #444;
-
 }
 
-#contact-area a{
+#contact-area a {
   color: white;
   transition: color 1s;
 }
 
-#contact-area a:hover{
+#contact-area a:hover {
   color: black;
   transition: color 1s;
 }
 
-
-
-.cover{
+.cover {
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
-  height:100vh;
-
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
 }
 
-.cover .row{
+.cover .row {
   margin: 0 auto;
   margin-top: 13vh;
 }
 
-.info p a{
+.info p a {
   color: black;
   text-decoration: none;
-  
-  transition: color 2s;
-  }
 
-.info p a:hover{
-  color: white;
-  
   transition: color 2s;
 }
 
+.info p a:hover {
+  color: white;
 
-.App .col-12 .btn{
+  transition: color 2s;
+}
+
+.App .col-12 .btn {
   margin: 0 auto;
   width: 25%;
   height: 7vh;
   cursor: pointer;
- 
 }
 
 #memory-game {
   text-align: center;
   margin: 0 auto;
   padding: 1.5rem;
-  width:100%;
-  background-color:silver;
+  width: 100%;
+  background-color: silver;
   border: solid black 5px;
   border-radius: 50px;
-
 }
 
-
-@media only screen and (min-width: 768px){
-
-  #about-area,  #info-area, #contact-area{
+@media only screen and (min-width: 768px) {
+  #about-area,
+  #info-area,
+  #contact-area {
     font-size: 1.5rem;
   }
 
-  .portfolio-item{
+  .portfolio-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 20px auto;
     border-radius: 30px;
     box-shadow: 10px 10px 12px black;
     text-align: left;
   }
-  
-.item-info{
-  padding: 1rem;
-  margin-top: 15%;
-  left: 5.5%;
-  right: 5%;
-}
-.portfolio-item img{
-  margin: 1vh 1vw;
-  min-width: 50%;
-  min-height: 100%;
-  float: left;
-  width: auto;
-  height: auto;
-  border-radius: 20%;
-  transition: border-radius 2s;
-  
-}
+
+  .item-info {
+    padding: 1rem;
+    margin-top: 15%;
+    left: 5.5%;
+    right: 5%;
+  }
+  .portfolio-item img {
+    min-width: 50%;
+    float: left;
+    width: 400px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 20%;
+    transition: border-radius 2s;
+  }
 }
 
-@media only screen and (min-width: 992px){
-
-  #about-area,  #info-area, #contact-area{
+@media only screen and (min-width: 992px) {
+  #about-area,
+  #info-area,
+  #contact-area {
     font-size: 2rem;
   }
 
-  .portfolio-item{
+  .portfolio-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 1vh 1vw;
     border-radius: 30px;
     box-shadow: 10px 10px 12px black;
     max-width: 37vw;
   }
-  
-.item-info{
-  padding: 1rem;
-  margin-top: 15%;
-  left: 5.5%;
-  right: 5%;
-}
-.portfolio-item img{
-  margin: 0 3vw 0 0;
-  min-width: 50%;
-  min-height: 100%;
-  float: left;
-  width: 50%;
-  border-radius: 20%;
-  transition: border-radius 2s;
-  
-}
+
+  .item-info {
+    padding: 1rem;
+    margin-top: 15%;
+    left: 5.5%;
+    right: 5%;
+  }
+  .portfolio-item img {
+    min-width: 50%;
+    float: left;
+    width: 400px;
+    max-width: 90vw;
+    border-radius: 20%;
+    transition: border-radius 2s;
+  }
 }
